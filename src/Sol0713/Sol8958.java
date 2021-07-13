@@ -1,5 +1,6 @@
 package Sol0713;
 
+import javax.swing.plaf.synth.SynthOptionPaneUI;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -15,13 +16,14 @@ public class Sol8958 {
             for(int j=0; j<str.length(); j++){
                 if(str.charAt(j) == 'O'){
                     cnt++;
-                } else if(str.charAt(j) == 'X'){
                     total += cnt;
+                } else if(str.charAt(j) == 'X'){
                     cnt = 0;
                 }
             }
             System.out.println(total);
             total = 0;
+            cnt = 0;
         }
     }
 }
