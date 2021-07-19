@@ -31,6 +31,7 @@ public class Sol2869 {
         System.out.println(count);
         */
         // 정상에 오르고 나면 미끄러지지 않기 때문에 V-A 후 A-B로 나눔
+        // V-A
         day = ((V-A) % (A-B) == 0) ? (V-A) / (A-B) + 1 : (V-A) / (A-B) + 2;
         System.out.println(day);
     }
